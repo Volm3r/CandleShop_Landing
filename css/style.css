@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@1&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Libre Baskerville', serif;
+    line-height: 2;
+}
+
+.intro-image {
+    background-attachment: fixed;
+    height: 400px;
+    background-image: url(../img/pexels-rodnae-productions-5699191.jpg);
+    background-position: center;
+    background-size: cover;
+    margin-bottom: -3rem;
+}
+
+.intro-text {
+    height: 200px;
+    padding-top: 4rem;
+    background-color: rgb(242, 242, 181);
+    clip-path: polygon(50% 17%, 100% 0, 100% 60%, 100% 100%, 0 98%, 0% 60%, 0 0);
+    text-align: center;
+    font-size: 1rem;
+    color: rgb(78, 23, 1);
+    text-shadow: 0 0 3px rgba(213, 1, 1, 0.187), 0 0 5px rgba(0, 0, 255, 0.187);
+}
+
+.intro-image__text  {
+    text-decoration: none;
+    text-align:center;
+    text-transform: uppercase;
+    color: rgb(77, 184, 242);
+    text-shadow: 0 0 3px rgb(45, 154, 243), 0 0 5px rgb(0, 0, 255);
+    animation-name: moveInLeft;
+    animation-duration: 4s;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes moveInLeft {
+    0% {
+        transform: translateX(-1000px);
+        opacity: 0;
+    }
+
+    80% {
+        transform: translateX(50px);
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.intro-text__textbox {
+    text-align: center;
+    font-size: 1rem;
+    color: rgb(78, 23, 1);
+    text-shadow: 0 0 3px rgba(213, 1, 1, 0.187), 0 0 5px rgba(0, 0, 255, 0.187);
+}
+
+.packaging-image {
+    background-attachment: fixed;
+    height: 400px;
+    background-image: url(../img/pexels-rodnae-productions-7309879.jpg);
+    background-position: center;
+    background-size: cover;
+    margin-top: -2rem;
+}
+
+.packaging-image__text {
+    text-align: center;
+        text-transform: uppercase;
+        color: rgb(77, 184, 242);
+        text-shadow: 0 0 3px rgb(38, 157, 243), 0 0 5px rgb(0, 0, 255);
+        animation-name: moveInRight;
+        animation-duration: 4s;
+        animation-timing-function: ease-in-out;
+    }
+
+@keyframes moveInRight {
+    0% {
+        transform: translateX(1000px);
+        opacity: 0;
+    }
+
+    80% {
+        transform: translateX(-50px);
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.packaging-text {
+    background-color: rgba(96, 245, 96, 0.322);
+}
+
+.packaging_text__textbox {
+    height: 200px;
+    text-align: center;
+    font-size: 1rem;
+    color: rgb(78, 23, 1);
+    text-shadow: 0 0 3px rgba(213, 1, 1, 0.187), 0 0 5px rgba(0, 0, 255, 0.187);
+}
+
+.heading-solid {
+    padding: 1rem;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 1rem;
+    color: rgb(78, 23, 1);
+    text-shadow: 0 0 3px rgba(213, 1, 1, 0.187), 0 0 5px rgba(0, 0, 255, 0.187);
+}
+
+.tutorials-image {
+    background-attachment: fixed;
+    height: 400px;
+    background-image:url(../img/pexels-irina-varanovich-14587639.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.tutorials-image__text {
+    text-align: center;
+        text-transform: uppercase;
+        color: rgb(77, 184, 242);
+        text-shadow: 0 0 3px rgb(43, 148, 245), 0 0 5px rgb(0, 0, 255);
+        animation-name: moveInRight;
+        animation-duration: 4s;
+        animation-timing-function: ease-in-out;
+    }
+
+@keyframes moveInRight {
+    0% {
+        transform: translateX(1000px);
+        opacity: 0;
+    }
+
+    80% {
+        transform: translateX(-50px);
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.heading-sub {
+    display: block;
+    font-size: 1.6rem;
+    letter-spacing: 1.3rem;
+}
+
+.btn-container {
+    text-align: center;
+    text-decoration: none;
+}
+
+.btn {
+    color: aliceblue;
+    display: inline-block;
+    font-size: 2rem;
+    padding: 1rem;
+    margin-top: 9rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all 0.3s;
+    border: 4px solid rgba(57, 162, 243, 0.427);
+}
+
+.btn:hover {
+    background-color: rgba(74, 150, 232, 0.724);
+    box-shadow: 0 0.5rem 2rem rgb(74, 150, 232);
+    transform: translateY(-5px);
+}
+
+.btn:active {
+    box-shadow: 0 0.5rem 1rem rgb(74, 150, 232);
+    transform: translateY(5px);
+}
+
+
+.footer {
+    height: 200px;
+    text-align: center;
+    background-color: #687576;
+    color: #5bb1f8;
+    font-size: 2rem;
+    padding-top: 1rem;
+}
+
+.footer ul li {
+    display: inline-block;
+    margin: 1rem;
+}
+
+.footer ul li a {
+    color: #54aaf5;
+    text-decoration: none;
+}
+
+.footer ul li:hover, .footer ul li a:hover {
+    color: #41c3f25a;
+    transform: scale(1.2);
+}
